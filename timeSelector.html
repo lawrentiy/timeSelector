@@ -1,0 +1,23 @@
+<template name="timeSelector">
+    {{#with data}}
+        <div class="btn-group timeSelector">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle h-holder" data-toggle="dropdown">{{defaultHour}}</button>
+                <ul class="dropdown-menu" role="menu">
+                    {{#each hours}}
+                        <button type="button" class="btn btn-default h-selector">{{.}}</button>
+                    {{/each}}
+                </ul>
+            </div>
+            <button type="button" class="btn btn-default separator" style="border-left: none; padding-left: 1px; padding-right: 1px">:</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle m-holder" data-toggle="dropdown" style="border-left: none;">{{defaultMinute}}</button>
+                <ul class="dropdown-menu" role="menu">
+                    {{#each minutes}}
+                        <button type="button" class="btn btn-default m-selector">{{.}}</button>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    {{/with}}
+</template>
