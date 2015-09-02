@@ -2,7 +2,7 @@ Package.describe({
   name: 'lawrentiy:timeselector',
   version: '0.1.0',
   summary: 'timeSelector is fine and simple way to select time',
-  git: 'lawrentiy/timeSelector',
+  git: 'https://github.com/lawrentiy/timeSelector.git',
   documentation: 'README.md'
 });
 
